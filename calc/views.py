@@ -4,7 +4,7 @@ from django.contrib.auth.forms import UserCreationForm
 from.models import *
 from.forms import OrderForm, CreateUsetform
 def home(request):
-    return render(request,'home.html',{'name':'Srujan'})
+    return render(request,'home.html',{'name':'Sonia'})
 def add(request):
  val1=int(request.POST['num1'])
  val2=int(request.POST['num2'])
