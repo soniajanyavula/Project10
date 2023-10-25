@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Products</h1><br><br>
+<table class="table">
+    <tr>
+        <th>Product</th>
+        <th>Price</th> 
+        <th>Category</th>        
+    </tr>
+    {% for product in prodlist %}
+    <tr>
+        <td>{{product.name}}</td>
+        <td>{{product.price}}</td>
+        <td>{{product.category}}</td>
+    </tr>
+    {% endfor %}
+</table>
+<br>
+<br>
+<a href="{% url 'home' %}"><button type="button" class="btn btn-success">Home</button></a>
+{% endblock %}
